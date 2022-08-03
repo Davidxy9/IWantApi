@@ -1,6 +1,8 @@
+using Flunt.Notifications;
+
 namespace IWantApp.Domain;
 
-public class Entity
+public abstract class Entity : Notifiable<Notification>
 {
     public Entity()
     {
